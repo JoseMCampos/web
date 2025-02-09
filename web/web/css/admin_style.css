@@ -1,0 +1,311 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap');
+
+
+
+
+/* General */
+body {
+    font-family: 'Poppins', sans-serif;
+    color: #333;
+    margin: 0;
+    padding: 0;
+    background-color: #f7f5f1d8;
+    background-size: 100% 100%;
+    background-repeat: no-repeat; /* Evita que el fondo se repita */
+    height: 100%;
+    min-height: 100vh;
+}
+
+
+h1{
+    color: #444;
+    text-align: center;
+    margin-top: 100px;
+    margin: 0;
+    font-size: 40px; /* Tamaño de fuente más grande */
+}
+
+
+h2 {
+    color: #444;
+    text-align: center;
+    margin-top: 100px;
+}
+
+h3 {
+    color: #ffffff;
+    text-align: center;
+    margin-top: 100px;
+}
+
+
+/* Header */
+header {
+    height: 100px;
+    display: flex;
+    align-items: center;
+    background-color: #82f0da; /* Color de fondo del header */
+    border: 1px solid #333;
+    border-radius: 10px;
+    box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.5);
+    margin-left: 220px; /* Mueve el header a la derecha, alineado con el sidebar */
+    padding: 10px;
+}
+
+
+.cabecera{
+    width: 100%;
+}
+
+.logo {
+    width: 200px;
+    height: 100px;
+    object-fit: cover;
+    position: relative;
+    margin-left: 30px;
+}
+
+
+
+/* Estilo del enlace del botón logout */
+.boton-logout {
+    text-decoration: none;
+    color: #fff;
+    background-color: #000000 ;
+    padding: 5px;
+    border-radius: 5px;
+    font-size: 17px;
+    float: right;
+   
+}
+
+.boton-logout:hover {
+    color: #47ecc9;
+}
+
+
+
+
+/* Menú lateral */
+.lateral {
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 200px;
+    background-color: #7a7e7e;
+    color: #fff;
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+    border: 1px solid #333;
+}
+
+
+
+.lateral a {
+    text-decoration: none;
+    color: #fff;
+    background-color: #3dceae;
+    padding: 10px;
+    margin: 10px 0;
+    border-radius: 5px;
+    text-align: center;
+    font-size: 1rem;
+}
+
+.lateral a:hover {
+    background-color: #195347;
+}
+
+.contenido-principal {
+    margin-left: 230px; /* Esto asegura que la tabla no se esconda detrás del sidebar (200px de sidebar + 20px de margen) */
+    padding: 20px;
+    padding-left: 30px; /* Asegura que no se esconda la tabla a la izquierda */
+    padding-right: 20px; /* Añade un margen a la derecha */
+    box-sizing: border-box; /* Asegura que los márgenes no afecten el tamaño total */
+}
+
+
+#notificaciones {
+    background-color: #b6f7e9; /* Color de fondo */
+    border: 1px solid #ddd;    /* Borde */
+    padding: 15px;             /* Espaciado interno  */
+    border-radius: 5px;        /* Bordes redondeados */
+    margin-top: 100px;         /* Ajustado para bajarlo más */
+    max-width: 600px;          /* Ajuste para un tamaño adecuado */
+    margin-left: auto;
+    margin-right: auto;        /* Centrado automático */
+    text-align: center;        /* Centra el contenido del div */
+}
+
+#notificaciones h3 {
+    color: #000000; /* Color del encabezado */
+    margin: 0 0 10px 0; /* Espaciado debajo del h3 */
+    font-size: 1.5rem;   /* tamaño de fuente */
+}
+
+#notificaciones p {
+    color: #333;    /* Color de texto */
+    font-size: 1.2rem; /* Tamaño de fuente ajustado */
+}
+
+
+
+
+
+/* Formularios */
+.formulario-incidencia, .formulario-usuario {
+    background: linear-gradient(to top, 
+    #82f0da, /*abajo*/
+    #39ceb0, 
+    #0e705d/*arriba*/
+    );
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    padding: 15px;
+    max-width: 800px;
+    max-height: 900px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 100px;
+}
+
+.formulario-incidencia label, .formulario-usuario label{
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+
+form input[type="text"],
+form input[type="number"],
+form input[type="email"],
+form input[type="password"],
+form textarea,
+form select {
+    width: 100%;
+    padding: 8px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-sizing: border-box;
+    font-size: 1rem;
+}
+
+form button {
+    background-color: #000000;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    margin-top: 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1rem;
+}
+
+form button:hover {
+    background-color: #333;
+}
+
+form h2{
+    font-size: 30px;
+    margin-top: 30px;
+    color: #ffffff;
+}
+
+
+.boton-inicio {
+    text-decoration: none;
+    color: #fff;
+    background-color: #0e705d     ;
+    padding: 20px;
+    border-radius: 5px;
+    font-size: 20px;
+    margin-left: 50px;
+}
+
+
+
+
+
+/* Tablas */
+table {
+    width: 100%; /* Usamos el 100% para que ocupe todo el espacio disponible */
+    max-width: 100%; /* Asegura que la tabla no se expanda más allá del contenedor */
+    border-collapse: collapse;
+    background-color: #ffffff;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+}
+
+table th, table td {
+    text-align: left;
+    padding: 12px;
+    border-bottom: 1px solid #ddd;
+}
+
+table th {
+    background-color: #55585a;
+    color: #ffffff;
+}
+
+table tr:hover {
+    background-color: #f1f1f1;
+}
+
+/* Acciones */
+table td form,
+table td a {
+    display: inline-block;
+    margin-right: 5px;
+}
+
+table td button,
+table td a {
+    text-decoration: none;
+    background-color: #3dceae;
+    color: #fff;
+    border: none;
+    padding: 5px 10px;
+    border-radius: 5px;
+    font-size: 0.9em;
+    cursor: pointer;
+}
+
+table td button:hover,
+table td a:hover {
+    background-color: #195347;
+}
+
+.boton-accion {
+    font-size: 18px;
+}
+
+
+/*Estilo para los botones ordenar tabla*/
+.ordenar-categoria, .ordenar-id {
+    display: inline-block;
+    background-color: #3dceae; 
+    color: #fff;
+    padding: 10px 15px;
+    margin-bottom: 20px;
+    margin-right: 10px; /* Espacio entre los botones */
+    text-decoration: none;
+    font-size: 1.1em;
+    border-radius: 5px;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+    border: none;
+}
+
+.ordenar-categoria:hover, .ordenar-id:hover {
+    background-color: #195347; /* Cambio de color al pasar el ratón */
+    transform: translateY(-2px); /* Le da un pequeño efecto de elevación */
+}
+
+.ordenar-categoria:focus, .ordenar-id:focus {
+    outline: none;
+    box-shadow: 0 0 0 2px rgba(95, 201, 130, 0.6); /* Sombra alrededor cuando está enfocado */
+}
+
+
